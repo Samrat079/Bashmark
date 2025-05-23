@@ -1,0 +1,3 @@
+/home/samrat/Documents/bashmark/build/CMakeFiles/bashmark.dir
+/home/samrat/Documents/bashmark/build/CMakeFiles/edit_cache.dir
+/home/samrat/Documents/bashmark/build/CMakeFiles/rebuild_cache.dir

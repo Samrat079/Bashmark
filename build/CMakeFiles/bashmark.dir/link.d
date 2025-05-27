@@ -2,7 +2,9 @@ bashmark: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
+  CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o \
   CMakeFiles/bashmark.dir/src/main.cpp.o \
+  CMakeFiles/bashmark.dir/src/multicore.cpp.o \
   CMakeFiles/bashmark.dir/src/singlecore.cpp.o \
   CMakeFiles/bashmark.dir/src/ui.cpp.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libncurses.so \
@@ -44,7 +46,11 @@ bashmark: \
 
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
+CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o:
+
 CMakeFiles/bashmark.dir/src/main.cpp.o:
+
+CMakeFiles/bashmark.dir/src/multicore.cpp.o:
 
 CMakeFiles/bashmark.dir/src/singlecore.cpp.o:
 

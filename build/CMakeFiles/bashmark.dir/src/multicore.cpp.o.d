@@ -1,7 +1,9 @@
-CMakeFiles/bashmark.dir/src/main.cpp.o: \
- /var/home/samrat/Documents/Git/Bashmark/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/15/iostream \
- /usr/include/c++/15/bits/requires_hosted.h \
+CMakeFiles/bashmark.dir/src/multicore.cpp.o: \
+ /var/home/samrat/Documents/Git/Bashmark/src/multicore.cpp \
+ /usr/include/stdc-predef.h \
+ /var/home/samrat/Documents/Git/Bashmark/include/multicore.hpp \
+ /var/home/samrat/Documents/Git/Bashmark/include/cpu_benchmark.hpp \
+ /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
@@ -134,7 +136,17 @@ CMakeFiles/bashmark.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc \
- /var/home/samrat/Documents/Git/Bashmark/include/single_core.hpp \
- /var/home/samrat/Documents/Git/Bashmark/include/multicore.hpp \
- /var/home/samrat/Documents/Git/Bashmark/include/ui.hpp
+ /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/thread \
+ /usr/include/c++/15/bits/std_thread.h \
+ /usr/include/c++/15/bits/unique_ptr.h \
+ /usr/include/c++/15/bits/this_thread_sleep.h \
+ /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
+ /usr/include/c++/15/cstdint \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/c++/15/limits \
+ /usr/include/c++/15/ctime /usr/include/c++/15/bits/parse_numbers.h \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc

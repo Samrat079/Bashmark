@@ -1,0 +1,4 @@
+
+What would you like to do?
+1. Single Core Benchmark
+2. Multi Core Benchmark

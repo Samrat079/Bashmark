@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/samrat/Documents/bashmark
+CMAKE_SOURCE_DIR = /var/home/samrat/Documents/Git/Bashmark
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/samrat/Documents/bashmark/build
+CMAKE_BINARY_DIR = /var/home/samrat/Documents/Git/Bashmark/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/samrat/Documents/bashmark/build/CMakeFiles /home/samrat/Documents/bashmark/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/home/samrat/Documents/Git/Bashmark/build/CMakeFiles /var/home/samrat/Documents/Git/Bashmark/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/samrat/Documents/bashmark/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/home/samrat/Documents/Git/Bashmark/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ bashmark/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/build
 .PHONY : bashmark/fast
 
+src/cpu_benchmark.o: src/cpu_benchmark.cpp.o
+.PHONY : src/cpu_benchmark.o
+
+# target to build an object file
+src/cpu_benchmark.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o
+.PHONY : src/cpu_benchmark.cpp.o
+
+src/cpu_benchmark.i: src/cpu_benchmark.cpp.i
+.PHONY : src/cpu_benchmark.i
+
+# target to preprocess a source file
+src/cpu_benchmark.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.i
+.PHONY : src/cpu_benchmark.cpp.i
+
+src/cpu_benchmark.s: src/cpu_benchmark.cpp.s
+.PHONY : src/cpu_benchmark.s
+
+# target to generate assembly for a file
+src/cpu_benchmark.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.s
+.PHONY : src/cpu_benchmark.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -152,6 +176,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/multicore.o: src/multicore.cpp.o
+.PHONY : src/multicore.o
+
+# target to build an object file
+src/multicore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/src/multicore.cpp.o
+.PHONY : src/multicore.cpp.o
+
+src/multicore.i: src/multicore.cpp.i
+.PHONY : src/multicore.i
+
+# target to preprocess a source file
+src/multicore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/src/multicore.cpp.i
+.PHONY : src/multicore.cpp.i
+
+src/multicore.s: src/multicore.cpp.s
+.PHONY : src/multicore.s
+
+# target to generate assembly for a file
+src/multicore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bashmark.dir/build.make CMakeFiles/bashmark.dir/src/multicore.cpp.s
+.PHONY : src/multicore.cpp.s
 
 src/singlecore.o: src/singlecore.cpp.o
 .PHONY : src/singlecore.o
@@ -210,9 +258,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... bashmark"
+	@echo "... src/cpu_benchmark.o"
+	@echo "... src/cpu_benchmark.i"
+	@echo "... src/cpu_benchmark.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/multicore.o"
+	@echo "... src/multicore.i"
+	@echo "... src/multicore.s"
 	@echo "... src/singlecore.o"
 	@echo "... src/singlecore.i"
 	@echo "... src/singlecore.s"

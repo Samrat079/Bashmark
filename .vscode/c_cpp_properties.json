@@ -3,10 +3,10 @@
     {
       "name": "Linux",
       "includePath": [
-        "/home/samrat/Documents/bashmark/include",
-        "/home/samrat/Documents/bashmark/src",
-        "/usr/include",
-        "/usr/local/include"
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/**",
+        "/usr/include"
       ],
       "defines": [],
       "compilerPath": "/usr/bin/g++",

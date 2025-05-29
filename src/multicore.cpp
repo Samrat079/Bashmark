@@ -10,7 +10,7 @@ void run_multi_core_benchmark(int threadCount) {
         if (threadCount == 0) threadCount = 2;
     }
 
-    std::cout << "\nStarting with" << threadCount << " CPU threads...\n";
+    std::cout << "\nStarting with " << threadCount << " CPU threads...\n";
 
     std::vector<std::thread> threads;
     threads.reserve(threadCount);

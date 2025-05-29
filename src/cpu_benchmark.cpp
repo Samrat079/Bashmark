@@ -13,7 +13,7 @@ void benchmark_worker() {
         auto now = std::chrono::high_resolution_clock::now();
         auto elapsed = std::chrono::duration_cast<std::chrono::seconds>(now - start).count();
 
-        if (elapsed >= 5) break;
+        if (elapsed >= 120) break;
     }
 
     std::cout << "Thread completed. Final result: " << result << "\n";

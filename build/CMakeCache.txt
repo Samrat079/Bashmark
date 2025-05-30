@@ -312,6 +312,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/samrat/Documents/git/Bashmark
@@ -381,6 +383,8 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenCL.so][/usr/include][v3.0()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Have symbol CL_VERSION_3_0
 OPENCL_VERSION_3_0:INTERNAL=1
 //ADVANCED property for variable: OpenCL_INCLUDE_DIR

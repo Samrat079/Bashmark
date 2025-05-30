@@ -1,7 +1,6 @@
 #pragma once
 #include <termios.h>
 #include <unistd.h>
-#include <iostream>
 #include <fcntl.h>  // for fcntl
 #include <stdio.h>  // for read()
 

@@ -1,3 +1,9 @@
-#pragma once
+// cpu_benchmark.hpp
+#ifndef CPU_BENCHMARK_HPP
+#define CPU_BENCHMARK_HPP
 
-void benchmark_worker();
+#include <atomic>
+
+void benchmark_worker(std::atomic<bool>& stop_flag);
+
+#endif

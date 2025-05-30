@@ -8,14 +8,14 @@
 #include "ui.hpp"  // Declare print_logo and print_menu here
 
 int main() {
-    print_logo("../assets/ascii_logo.txt");
+    print_logo();
     
 
     std::string choice;
 
     while (true) {
 
-        print_menu("../assets/menu.txt");
+        print_menu();
 
         std::cout << "What would you like to do [1-4](q to quit): ";
 

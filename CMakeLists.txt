@@ -1,17 +1,20 @@
 cmake_minimum_required(VERSION 3.10)
-project(bashmark)
+project(bashmark VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
+# Default to Debug build type
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
 endif()
 
+# Source files
 file(GLOB SOURCES "src/*.cpp")
 
+# Create executable
 add_executable(bashmark ${SOURCES})
 
 # Link OpenCL
@@ -22,11 +25,29 @@ target_link_libraries(bashmark PRIVATE OpenCL::OpenCL)
 find_package(Threads REQUIRED)
 target_link_libraries(bashmark PRIVATE Threads::Threads)
 
-# Disable optimizations for specific file if needed
+# Link filesystem for older GCC versions
+if (CMAKE_COMPILER_IS_GNUCXX AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 10)
+    target_link_libraries(bashmark stdc++fs)
+endif()
+
+# Disable optimizations for specific file
 set_source_files_properties(src/singlecore.cpp PROPERTIES COMPILE_FLAGS "-O0")
 
-# Copy kernel files to build output
-file(COPY kernels/gpu_benchmark.cl DESTINATION ${CMAKE_BINARY_DIR}/kernels)
+# ===== INSTALLATION RULES =====
 
-# Optional: place final binary in project root instead of build/
-# set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+# Binary goes into bin/
+install(TARGETS bashmark DESTINATION bin)
+
+# Assets go into share/bashmark/assets
+install(DIRECTORY assets/ DESTINATION share/bashmark/assets)
+
+# Kernels go into share/bashmark/kernels
+install(DIRECTORY kernels/ DESTINATION share/bashmark/kernels)
+
+# ===== OPTIONAL: Packaging with CPack =====
+include(InstallRequiredSystemLibraries)
+set(CPACK_PACKAGE_NAME "bashmark")
+set(CPACK_PACKAGE_VERSION "1.0.0")
+set(CPACK_GENERATOR "DEB;TGZ")
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Your Name")
+include(CPack)

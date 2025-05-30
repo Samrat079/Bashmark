@@ -1,3 +1,9 @@
 /home/samrat/Documents/git/Bashmark/build/CMakeFiles/bashmark.dir
+/home/samrat/Documents/git/Bashmark/build/CMakeFiles/package.dir
+/home/samrat/Documents/git/Bashmark/build/CMakeFiles/package_source.dir
 /home/samrat/Documents/git/Bashmark/build/CMakeFiles/edit_cache.dir
 /home/samrat/Documents/git/Bashmark/build/CMakeFiles/rebuild_cache.dir
+/home/samrat/Documents/git/Bashmark/build/CMakeFiles/list_install_components.dir
+/home/samrat/Documents/git/Bashmark/build/CMakeFiles/install.dir
+/home/samrat/Documents/git/Bashmark/build/CMakeFiles/install/local.dir
+/home/samrat/Documents/git/Bashmark/build/CMakeFiles/install/strip.dir

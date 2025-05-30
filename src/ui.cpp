@@ -1,9 +1,11 @@
-#include "ui.hpp"
 #include <iostream>
 #include <fstream>
+#include <vector>
 #include <string>
 #include <cstdlib> // for getenv
 #include <filesystem> // C++17
+#include <stdexcept>
+
 #if defined(__linux__)
 #include <unistd.h>
 #include <limits.h>
@@ -11,10 +13,12 @@
 #include <mach-o/dyld.h>
 #elif defined(_WIN32)
 #include <windows.h>
+#include <libloaderapi.h>
 #endif
 
 namespace fs = std::filesystem;
 
+// Function to get the directory of the executable
 std::string getExecutableDir() {
     char buffer[PATH_MAX];
 
@@ -31,7 +35,9 @@ std::string getExecutableDir() {
     return fs::path(buffer).parent_path().string();
 
 #elif defined(_WIN32)
-    GetModuleFileNameA(NULL, buffer, PATH_MAX);
+    if (GetModuleFileNameA(NULL, buffer, PATH_MAX) == 0) {
+        throw std::runtime_error("Failed to get executable path");
+    }
     return fs::path(buffer).parent_path().string();
 
 #else
@@ -39,26 +45,63 @@ std::string getExecutableDir() {
 #endif
 }
 
+// Function to determine the assets path
 std::string getAssetsPath() {
-    const char* overridePath = std::getenv("BASHMARK_ASSETS_PATH");
-    if (overridePath && fs::exists(overridePath)) {
-        return std::string(overridePath);
+    // 1. Check BASHMARK_ASSETS_PATH environment variable
+    if (const char* overridePath = std::getenv("BASHMARK_ASSETS_PATH")) {
+        if (fs::exists(overridePath)) {
+            return std::string(overridePath);
+        }
     }
 
-    std::string systemPath = "/usr/local/share/bashmark/assets";
-    if (fs::exists(systemPath)) {
-        return systemPath;
+    // 2. User-specific data directory (~/.local/share/bashmark/assets)
+    if (const char* home = std::getenv("HOME")) {
+        fs::path userPath = fs::path(home) / ".local/share/bashmark/assets";
+        if (fs::exists(userPath)) {
+            return userPath.string();
+        }
     }
 
-    std::string localPath = getExecutableDir() + "/assets";
-    if (fs::exists(localPath)) {
-        return localPath;
+    // 3. System-wide data directories
+    const std::vector<fs::path> systemPaths = {
+        "/usr/local/share/bashmark/assets",
+        "/usr/share/bashmark/assets"
+    };
+    for (const auto& path : systemPaths) {
+        if (fs::exists(path)) {
+            return path.string();
+        }
+    }
+
+    // 4. XDG data directory (e.g., for Flatpak or sandboxed environments)
+    fs::path xdgDataHome;
+    if (const char* xdg = std::getenv("XDG_DATA_HOME")) {
+        xdgDataHome = xdg;
+    } else if (const char* home = std::getenv("HOME")) {
+        xdgDataHome = fs::path(home) / ".local/share";
+    }
+    if (!xdgDataHome.empty()) {
+        fs::path flatpakPath = xdgDataHome / "bashmark/assets";
+        if (fs::exists(flatpakPath)) {
+            return flatpakPath.string();
+        }
+    }
+
+    // 5. Relative to the executable's directory
+    try {
+        fs::path execDir = getExecutableDir();
+        fs::path relativePath = execDir / "assets";
+        if (fs::exists(relativePath)) {
+            return relativePath.string();
+        }
+    } catch (...) {
+        // Ignore errors and proceed to throw below
     }
 
     throw std::runtime_error("Assets directory not found in any expected location.");
 }
 
-
+// Function to print the contents of a file
 void print_file(const std::string& filename) {
     std::string path = getAssetsPath() + "/" + filename;
     std::ifstream file(path);
@@ -73,10 +116,12 @@ void print_file(const std::string& filename) {
     }
 }
 
+// Function to print the ASCII logo
 void print_logo() {
     print_file("ascii_logo.txt");
 }
 
+// Function to print the menu
 void print_menu() {
     print_file("menu.txt");
 }

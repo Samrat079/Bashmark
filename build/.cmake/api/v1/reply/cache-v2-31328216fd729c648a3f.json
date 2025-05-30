@@ -39,11 +39,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Build type"
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "Release"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local"
+			"value" : "/usr"
 		},
 		{
 			"name" : "CMAKE_INSTALL_SO_NO_EXE",

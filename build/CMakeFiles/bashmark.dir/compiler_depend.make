@@ -152,6 +152,7 @@ CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: /home/samrat/Documents/git/Bash
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -173,14 +174,21 @@ CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: /home/samrat/Documents/git/Bash
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -227,10 +235,14 @@ CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: /home/samrat/Documents/git/Bash
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -391,13 +403,20 @@ CMakeFiles/bashmark.dir/src/full_benchmark.cpp.o: /home/samrat/Documents/git/Bas
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -435,6 +454,8 @@ CMakeFiles/bashmark.dir/src/full_benchmark.cpp.o: /home/samrat/Documents/git/Bas
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -638,13 +659,20 @@ CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: /home/samrat/Documents/git/Bash
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -682,6 +710,8 @@ CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: /home/samrat/Documents/git/Bash
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -852,13 +882,20 @@ CMakeFiles/bashmark.dir/src/main.cpp.o: /home/samrat/Documents/git/Bashmark/src/
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -896,6 +933,8 @@ CMakeFiles/bashmark.dir/src/main.cpp.o: /home/samrat/Documents/git/Bashmark/src/
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -1064,6 +1103,7 @@ CMakeFiles/bashmark.dir/src/multicore.cpp.o: /home/samrat/Documents/git/Bashmark
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl2.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
@@ -1076,14 +1116,21 @@ CMakeFiles/bashmark.dir/src/multicore.cpp.o: /home/samrat/Documents/git/Bashmark
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -1130,10 +1177,14 @@ CMakeFiles/bashmark.dir/src/multicore.cpp.o: /home/samrat/Documents/git/Bashmark
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -1394,7 +1445,6 @@ CMakeFiles/bashmark.dir/src/singlecore.cpp.o: /home/samrat/Documents/git/Bashmar
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui.cpp \
-  /home/samrat/Documents/git/Bashmark/include/ui.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1457,12 +1507,15 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -1471,6 +1524,7 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
@@ -1515,6 +1569,7 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1560,13 +1615,20 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -1602,10 +1664,14 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
@@ -1707,8 +1773,6 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/c++/13/bits/sstream.tcc:
 
-/usr/include/c++/13/bits/quoted_string.h:
-
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/13/bits/fstream.tcc:
@@ -1722,6 +1786,20 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 /usr/include/c++/13/thread:
 
 /usr/include/c++/13/bits/this_thread_sleep.h:
+
+/home/samrat/Documents/git/Bashmark/include/multicore.hpp:
+
+/home/samrat/Documents/git/Bashmark/include/gpu_benchmark.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
@@ -1773,6 +1851,14 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/c++/13/istream:
 
+/usr/include/limits.h:
+
+/usr/include/c++/13/bits/std_thread.h:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
+
+/usr/include/c++/13/initializer_list:
+
 /usr/include/c++/13/iostream:
 
 /usr/include/c++/13/ext/type_traits.h:
@@ -1789,6 +1875,8 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/c++/13/debug/assertions.h:
 
+/usr/include/x86_64-linux-gnu/bits/select-decl.h:
+
 /usr/include/c++/13/ctime:
 
 /usr/include/c++/13/cstdlib:
@@ -1797,11 +1885,15 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/c++/13/cstdio:
 
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
 /usr/include/c++/13/cstddef:
 
 /usr/include/fcntl.h:
-
-/usr/include/c++/13/cmath:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
@@ -1887,8 +1979,6 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/linux/falloc.h:
 
-/usr/include/c++/13/bits/ptr_traits.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
@@ -1914,6 +2004,8 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
@@ -1945,9 +2037,15 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/alloca.h:
 
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/13/cwchar:
+
 /usr/include/c++/13/iosfwd:
 
 /usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
 
@@ -1969,11 +2067,13 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
+/home/samrat/Documents/git/Bashmark/src/full_benchmark.cpp:
+
+/usr/include/c++/13/type_traits:
+
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/13/bits/move.h:
 
@@ -2075,10 +2175,6 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/unistd.h:
 
-/usr/include/c++/13/cwchar:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
@@ -2111,12 +2207,6 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/c++/13/type_traits:
-
-/home/samrat/Documents/git/Bashmark/src/full_benchmark.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/13/string_view:
@@ -2137,6 +2227,10 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
+/usr/include/c++/13/cmath:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/time.h:
@@ -2147,27 +2241,31 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:
+
+/usr/include/c++/13/bits/quoted_string.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
+/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
-
-/usr/include/limits.h:
-
-/usr/include/c++/13/tr1/bessel_function.tcc:
-
-/usr/include/c++/13/initializer_list:
-
-/usr/include/c++/13/bits/std_thread.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-misc.h:
 
@@ -2186,6 +2284,8 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -2211,6 +2311,8 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
@@ -2229,21 +2331,21 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd-decl.h:
+
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
@@ -2258,15 +2360,3 @@ CMakeFiles/bashmark.dir/src/ui.cpp.o: /home/samrat/Documents/git/Bashmark/src/ui
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-/home/samrat/Documents/git/Bashmark/include/gpu_benchmark.hpp:
-
-/home/samrat/Documents/git/Bashmark/include/multicore.hpp:

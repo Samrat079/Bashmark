@@ -56,7 +56,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++17"
 				}
 			],
 			"includes" : 
@@ -89,7 +89,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++17"
 				},
 				{
 					"fragment" : "-O0"
@@ -129,7 +129,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/usr/local"
+			"path" : "/usr"
 		}
 	},
 	"link" : 
@@ -137,7 +137,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{

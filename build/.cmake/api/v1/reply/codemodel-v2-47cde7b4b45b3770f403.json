@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-da13a03409707dcf1c76.json",
+					"jsonFile" : "directory-.-Release-da13a03409707dcf1c76.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -20,7 +20,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -40,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "bashmark::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-bashmark-Debug-00e586e357675345244a.json",
+					"jsonFile" : "target-bashmark-Release-b967a37d035cd8f5377e.json",
 					"name" : "bashmark",
 					"projectIndex" : 0
 				}

@@ -22,7 +22,7 @@ set(CPACK_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/
 set(CPACK_INNOSETUP_ARCHITECTURE "x64")
 set(CPACK_INSTALLED_DIRECTORIES "/home/samrat/Documents/git/Bashmark;/")
 set(CPACK_INSTALL_CMAKE_PROJECTS "")
-set(CPACK_INSTALL_PREFIX "/usr/local")
+set(CPACK_INSTALL_PREFIX "/usr")
 set(CPACK_MODULE_PATH "")
 set(CPACK_NSIS_DISPLAY_NAME "bashmark 1.0.0")
 set(CPACK_NSIS_INSTALLER_ICON_CODE "")

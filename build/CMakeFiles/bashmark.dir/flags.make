@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/samrat/Documents/git/Bashmark/include
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
 
 # Custom flags: CMakeFiles/bashmark.dir/src/singlecore.cpp.o_FLAGS = -O0
 

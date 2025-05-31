@@ -117,11 +117,27 @@ void print_file(const std::string& filename) {
 }
 
 // Function to print the ASCII logo
-void print_logo() {
-    print_file("ascii_logo.txt");
+void print_logo(const std::string& assetsPath) {
+    std::ifstream file(assetsPath + "/ascii_logo.txt");
+    if (!file) {
+        throw std::runtime_error("Could not open logo file");
+    }
+
+    std::string line;
+    while (std::getline(file, line)) {
+        std::cout << line << std::endl;
+    }
 }
 
-// Function to print the menu
-void print_menu() {
-    print_file("menu.txt");
+
+void print_menu(const std::string& assetsPath) {
+    std::ifstream file(assetsPath + "/menu.txt");
+    if (!file) {
+        throw std::runtime_error("Could not open menu file");
+    }
+
+    std::string line;
+    while (std::getline(file, line)) {
+        std::cout << line << std::endl;
+    }
 }

@@ -35,15 +35,24 @@ set_source_files_properties(src/singlecore.cpp PROPERTIES COMPILE_FLAGS "-O0")
 
 # ===== INSTALLATION RULES =====
 
-# Binary goes into bin/
+# Binary
 install(TARGETS bashmark DESTINATION bin)
 
-# Assets go into share/bashmark/assets
-install(DIRECTORY assets/ DESTINATION share/bashmark/assets)
+# Assets
+install(DIRECTORY assets/ DESTINATION share/bashmark/assets
+        FILES_MATCHING PATTERN "*")
 
-# Kernels go into share/bashmark/kernels
-install(DIRECTORY kernels/ DESTINATION share/bashmark/kernels)
+# Kernels
+install(DIRECTORY kernels/ DESTINATION share/bashmark/kernels
+        FILES_MATCHING PATTERN "*")
 
+add_compile_definitions(DEFAULT_ASSET_PATH=\"/usr/share/bashmark/assets\")
+
+add_compile_definitions(DEFAULT_ASSET_PATH=\"${CMAKE_INSTALL_PREFIX}/share/bashmark/assets\")
+
+
+
+        
 # ===== OPTIONAL: Packaging with CPack =====
 include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_NAME "bashmark")

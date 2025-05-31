@@ -1,30 +1,47 @@
-#include <atomic>
 #include <iostream>
-#include <cmath>
+#include <vector>
 #include <chrono>
-#include "input.hpp"  // for wait_for_keypress_non_blocking()
-#include "cpu_benchmark.hpp"
+#include <atomic>
+#include <cmath>
+#include <thread>
 
 void benchmark_worker(std::atomic<bool>& stop_flag) {
-    double result = 0.0;
-    long long counter = 0;
+    constexpr int N = 128;  // Matrix size (N x N)
+    using Matrix = std::vector<std::vector<float>>;
+
+    // Initialize matrices A and B
+    Matrix A(N, std::vector<float>(N, 1.1f));
+    Matrix B(N, std::vector<float>(N, 2.2f));
+    Matrix C(N, std::vector<float>(N, 0.0f)); // Result matrix
+
+    long long mult_count = 0;
     auto start = std::chrono::high_resolution_clock::now();
 
-
     while (!stop_flag) {
-        result = std::sin(result) + std::cos(result);
-        counter++;
+        // Perform matrix multiplication: C = A * B
+        for (int i = 0; i < N; ++i) {
+            for (int j = 0; j < N; ++j) {
+                float sum = 0.0f;
+                for (int k = 0; k < N; ++k) {
+                    sum += A[i][k] * B[k][j];
+                }
+                C[i][j] = sum;
+            }
+        }
 
-        if (counter % 100000 == 0) {
+        mult_count++;
+
+        if (mult_count % 10 == 0) {
             auto now = std::chrono::high_resolution_clock::now();
             auto elapsed = std::chrono::duration_cast<std::chrono::seconds>(now - start).count();
-   
             if (elapsed >= 120 || stop_flag.load()) break;
-            // Optional: print progress or score here if you want
         }
     }
-    std::cout << std::endl; 
 
-    int score = static_cast<int>(std::abs(result * 1000)) % 100000;
-    std::cout << "\nBenchmark ended. Score: " << score << "\n";
+    auto end = std::chrono::high_resolution_clock::now();
+    auto total_elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+    double mults_per_sec = static_cast<double>(mult_count) / (total_elapsed / 1000.0);
+
+    std::cout << "Thread completed. Matrix multiplied: " << mult_count << ", ";
+    std::cout << "Performance score: " << static_cast<int>(mults_per_sec) << " multiplications/sec\n";
 }

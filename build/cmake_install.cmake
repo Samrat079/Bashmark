@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -59,15 +59,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/samrat/Documents/git/Bashmark/build/CMakeFiles/bashmark.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+  include("/home/samrat/Documents/git/Bashmark/build/CMakeFiles/bashmark.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bashmark/assets" TYPE DIRECTORY FILES "/home/samrat/Documents/git/Bashmark/assets/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bashmark/assets" TYPE DIRECTORY FILES "/home/samrat/Documents/git/Bashmark/assets/" FILES_MATCHING REGEX "/[^/]*$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bashmark/kernels" TYPE DIRECTORY FILES "/home/samrat/Documents/git/Bashmark/kernels/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bashmark/kernels" TYPE DIRECTORY FILES "/home/samrat/Documents/git/Bashmark/kernels/" FILES_MATCHING REGEX "/[^/]*$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

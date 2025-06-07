@@ -1,8 +1,8 @@
 CMakeFiles/bashmark.dir/src/singlecore.cpp.o: \
- /var/home/samrat/Documents/git/Bashmark/src/singlecore.cpp \
+ /var/home/samrat/Documents/git/bashmark/src/singlecore.cpp \
  /usr/include/stdc-predef.h \
- /var/home/samrat/Documents/git/Bashmark/include/single_core.hpp \
- /var/home/samrat/Documents/git/Bashmark/include/cpu_benchmark.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/single_core.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/cpu_benchmark.hpp \
  /usr/include/c++/14/atomic /usr/include/c++/14/bits/version.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -23,7 +23,7 @@ CMakeFiles/bashmark.dir/src/singlecore.cpp.o: \
  /usr/include/bits/stdint-least.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/bits/move.h /usr/include/c++/14/type_traits \
- /var/home/samrat/Documents/git/Bashmark/include/input.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/input.hpp \
  /usr/include/termios.h /usr/include/bits/termios.h \
  /usr/include/bits/termios-struct.h /usr/include/bits/termios-c_cc.h \
  /usr/include/bits/termios-c_iflag.h /usr/include/bits/termios-c_oflag.h \

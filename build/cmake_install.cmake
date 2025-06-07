@@ -1,4 +1,4 @@
-# Install script for directory: /var/home/samrat/Documents/git/Bashmark
+# Install script for directory: /var/home/samrat/Documents/git/bashmark
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/bashmark"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/var/home/samrat/Documents/git/Bashmark/build/bashmark")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/var/home/samrat/Documents/git/bashmark/build/bashmark")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/bashmark" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/bashmark")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -59,7 +59,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bashmark/assets" TYPE DIRECTORY FILES "/var/home/samrat/Documents/git/Bashmark/assets/" FILES_MATCHING REGEX "/[^/]*$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bashmark/assets" TYPE DIRECTORY FILES "/var/home/samrat/Documents/git/bashmark/assets/" FILES_MATCHING REGEX "/[^/]*$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -77,6 +77,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/var/home/samrat/Documents/git/Bashmark/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/var/home/samrat/Documents/git/bashmark/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

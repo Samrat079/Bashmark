@@ -1,0 +1,3 @@
+/usr/bin/bashmark
+/usr/share/bashmark/assets/ascii_logo.txt
+/usr/share/bashmark/assets/menu.txt

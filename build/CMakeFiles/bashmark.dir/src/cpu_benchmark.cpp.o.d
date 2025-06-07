@@ -1,5 +1,5 @@
 CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: \
- /var/home/samrat/Documents/git/Bashmark/src/cpu_benchmark.cpp \
+ /var/home/samrat/Documents/git/bashmark/src/cpu_benchmark.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \

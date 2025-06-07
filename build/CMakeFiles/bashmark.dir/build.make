@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /var/home/samrat/Documents/git/Bashmark
+CMAKE_SOURCE_DIR = /var/home/samrat/Documents/git/bashmark
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /var/home/samrat/Documents/git/Bashmark/build
+CMAKE_BINARY_DIR = /var/home/samrat/Documents/git/bashmark/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bashmark.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/bashmark.dir/progress.make
 include CMakeFiles/bashmark.dir/flags.make
 
 CMakeFiles/bashmark.dir/src/main.cpp.o: CMakeFiles/bashmark.dir/flags.make
-CMakeFiles/bashmark.dir/src/main.cpp.o: /var/home/samrat/Documents/git/Bashmark/src/main.cpp
+CMakeFiles/bashmark.dir/src/main.cpp.o: /var/home/samrat/Documents/git/bashmark/src/main.cpp
 CMakeFiles/bashmark.dir/src/main.cpp.o: CMakeFiles/bashmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/Bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/bashmark.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/main.cpp.o -MF CMakeFiles/bashmark.dir/src/main.cpp.o.d -o CMakeFiles/bashmark.dir/src/main.cpp.o -c /var/home/samrat/Documents/git/Bashmark/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/bashmark.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/main.cpp.o -MF CMakeFiles/bashmark.dir/src/main.cpp.o.d -o CMakeFiles/bashmark.dir/src/main.cpp.o -c /var/home/samrat/Documents/git/bashmark/src/main.cpp
 
 CMakeFiles/bashmark.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bashmark.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/Bashmark/src/main.cpp > CMakeFiles/bashmark.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/bashmark/src/main.cpp > CMakeFiles/bashmark.dir/src/main.cpp.i
 
 CMakeFiles/bashmark.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bashmark.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/Bashmark/src/main.cpp -o CMakeFiles/bashmark.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/bashmark/src/main.cpp -o CMakeFiles/bashmark.dir/src/main.cpp.s
 
 CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: CMakeFiles/bashmark.dir/flags.make
-CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: /var/home/samrat/Documents/git/Bashmark/src/cpu_benchmark.cpp
+CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: /var/home/samrat/Documents/git/bashmark/src/cpu_benchmark.cpp
 CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o: CMakeFiles/bashmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/Bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o -MF CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o.d -o CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o -c /var/home/samrat/Documents/git/Bashmark/src/cpu_benchmark.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o -MF CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o.d -o CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o -c /var/home/samrat/Documents/git/bashmark/src/cpu_benchmark.cpp
 
 CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/Bashmark/src/cpu_benchmark.cpp > CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/bashmark/src/cpu_benchmark.cpp > CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.i
 
 CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/Bashmark/src/cpu_benchmark.cpp -o CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/bashmark/src/cpu_benchmark.cpp -o CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.s
 
 CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: CMakeFiles/bashmark.dir/flags.make
-CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: /var/home/samrat/Documents/git/Bashmark/src/gpu_benchmark.cpp
+CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: /var/home/samrat/Documents/git/bashmark/src/gpu_benchmark.cpp
 CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: CMakeFiles/bashmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/Bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o -MF CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o.d -o CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o -c /var/home/samrat/Documents/git/Bashmark/src/gpu_benchmark.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o -MF CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o.d -o CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o -c /var/home/samrat/Documents/git/bashmark/src/gpu_benchmark.cpp
 
 CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/Bashmark/src/gpu_benchmark.cpp > CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/bashmark/src/gpu_benchmark.cpp > CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.i
 
 CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/Bashmark/src/gpu_benchmark.cpp -o CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/bashmark/src/gpu_benchmark.cpp -o CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.s
 
 CMakeFiles/bashmark.dir/src/multicore.cpp.o: CMakeFiles/bashmark.dir/flags.make
-CMakeFiles/bashmark.dir/src/multicore.cpp.o: /var/home/samrat/Documents/git/Bashmark/src/multicore.cpp
+CMakeFiles/bashmark.dir/src/multicore.cpp.o: /var/home/samrat/Documents/git/bashmark/src/multicore.cpp
 CMakeFiles/bashmark.dir/src/multicore.cpp.o: CMakeFiles/bashmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/Bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bashmark.dir/src/multicore.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/multicore.cpp.o -MF CMakeFiles/bashmark.dir/src/multicore.cpp.o.d -o CMakeFiles/bashmark.dir/src/multicore.cpp.o -c /var/home/samrat/Documents/git/Bashmark/src/multicore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bashmark.dir/src/multicore.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/multicore.cpp.o -MF CMakeFiles/bashmark.dir/src/multicore.cpp.o.d -o CMakeFiles/bashmark.dir/src/multicore.cpp.o -c /var/home/samrat/Documents/git/bashmark/src/multicore.cpp
 
 CMakeFiles/bashmark.dir/src/multicore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bashmark.dir/src/multicore.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/Bashmark/src/multicore.cpp > CMakeFiles/bashmark.dir/src/multicore.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/bashmark/src/multicore.cpp > CMakeFiles/bashmark.dir/src/multicore.cpp.i
 
 CMakeFiles/bashmark.dir/src/multicore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bashmark.dir/src/multicore.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/Bashmark/src/multicore.cpp -o CMakeFiles/bashmark.dir/src/multicore.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/bashmark/src/multicore.cpp -o CMakeFiles/bashmark.dir/src/multicore.cpp.s
 
 CMakeFiles/bashmark.dir/src/singlecore.cpp.o: CMakeFiles/bashmark.dir/flags.make
-CMakeFiles/bashmark.dir/src/singlecore.cpp.o: /var/home/samrat/Documents/git/Bashmark/src/singlecore.cpp
+CMakeFiles/bashmark.dir/src/singlecore.cpp.o: /var/home/samrat/Documents/git/bashmark/src/singlecore.cpp
 CMakeFiles/bashmark.dir/src/singlecore.cpp.o: CMakeFiles/bashmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/Bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/bashmark.dir/src/singlecore.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/singlecore.cpp.o -MF CMakeFiles/bashmark.dir/src/singlecore.cpp.o.d -o CMakeFiles/bashmark.dir/src/singlecore.cpp.o -c /var/home/samrat/Documents/git/Bashmark/src/singlecore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/bashmark.dir/src/singlecore.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/singlecore.cpp.o -MF CMakeFiles/bashmark.dir/src/singlecore.cpp.o.d -o CMakeFiles/bashmark.dir/src/singlecore.cpp.o -c /var/home/samrat/Documents/git/bashmark/src/singlecore.cpp
 
 CMakeFiles/bashmark.dir/src/singlecore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bashmark.dir/src/singlecore.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/Bashmark/src/singlecore.cpp > CMakeFiles/bashmark.dir/src/singlecore.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/bashmark/src/singlecore.cpp > CMakeFiles/bashmark.dir/src/singlecore.cpp.i
 
 CMakeFiles/bashmark.dir/src/singlecore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bashmark.dir/src/singlecore.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/Bashmark/src/singlecore.cpp -o CMakeFiles/bashmark.dir/src/singlecore.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/bashmark/src/singlecore.cpp -o CMakeFiles/bashmark.dir/src/singlecore.cpp.s
 
 CMakeFiles/bashmark.dir/src/ui.cpp.o: CMakeFiles/bashmark.dir/flags.make
-CMakeFiles/bashmark.dir/src/ui.cpp.o: /var/home/samrat/Documents/git/Bashmark/src/ui.cpp
+CMakeFiles/bashmark.dir/src/ui.cpp.o: /var/home/samrat/Documents/git/bashmark/src/ui.cpp
 CMakeFiles/bashmark.dir/src/ui.cpp.o: CMakeFiles/bashmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/Bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/bashmark.dir/src/ui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/ui.cpp.o -MF CMakeFiles/bashmark.dir/src/ui.cpp.o.d -o CMakeFiles/bashmark.dir/src/ui.cpp.o -c /var/home/samrat/Documents/git/Bashmark/src/ui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/var/home/samrat/Documents/git/bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/bashmark.dir/src/ui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bashmark.dir/src/ui.cpp.o -MF CMakeFiles/bashmark.dir/src/ui.cpp.o.d -o CMakeFiles/bashmark.dir/src/ui.cpp.o -c /var/home/samrat/Documents/git/bashmark/src/ui.cpp
 
 CMakeFiles/bashmark.dir/src/ui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bashmark.dir/src/ui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/Bashmark/src/ui.cpp > CMakeFiles/bashmark.dir/src/ui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/home/samrat/Documents/git/bashmark/src/ui.cpp > CMakeFiles/bashmark.dir/src/ui.cpp.i
 
 CMakeFiles/bashmark.dir/src/ui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bashmark.dir/src/ui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/Bashmark/src/ui.cpp -o CMakeFiles/bashmark.dir/src/ui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/home/samrat/Documents/git/bashmark/src/ui.cpp -o CMakeFiles/bashmark.dir/src/ui.cpp.s
 
 # Object files for target bashmark
 bashmark_OBJECTS = \
@@ -174,7 +174,7 @@ bashmark: CMakeFiles/bashmark.dir/src/ui.cpp.o
 bashmark: CMakeFiles/bashmark.dir/build.make
 bashmark: /usr/lib64/libOpenCL.so
 bashmark: CMakeFiles/bashmark.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/var/home/samrat/Documents/git/Bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable bashmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/var/home/samrat/Documents/git/bashmark/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable bashmark"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bashmark.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,6 +186,6 @@ CMakeFiles/bashmark.dir/clean:
 .PHONY : CMakeFiles/bashmark.dir/clean
 
 CMakeFiles/bashmark.dir/depend:
-	cd /var/home/samrat/Documents/git/Bashmark/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/home/samrat/Documents/git/Bashmark /var/home/samrat/Documents/git/Bashmark /var/home/samrat/Documents/git/Bashmark/build /var/home/samrat/Documents/git/Bashmark/build /var/home/samrat/Documents/git/Bashmark/build/CMakeFiles/bashmark.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /var/home/samrat/Documents/git/bashmark/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/home/samrat/Documents/git/bashmark /var/home/samrat/Documents/git/bashmark /var/home/samrat/Documents/git/bashmark/build /var/home/samrat/Documents/git/bashmark/build /var/home/samrat/Documents/git/bashmark/build/CMakeFiles/bashmark.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bashmark.dir/depend
 

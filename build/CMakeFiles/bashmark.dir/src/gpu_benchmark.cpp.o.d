@@ -1,5 +1,5 @@
 CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: \
- /var/home/samrat/Documents/git/Bashmark/src/gpu_benchmark.cpp \
+ /var/home/samrat/Documents/git/bashmark/src/gpu_benchmark.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
@@ -147,7 +147,7 @@ CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o: \
  /usr/include/c++/14/thread /usr/include/c++/14/bits/std_thread.h \
  /usr/include/c++/14/bits/unique_ptr.h \
  /usr/include/c++/14/bits/this_thread_sleep.h \
- /var/home/samrat/Documents/git/Bashmark/include/input.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/input.hpp \
  /usr/include/termios.h /usr/include/bits/termios.h \
  /usr/include/bits/termios-struct.h /usr/include/bits/termios-c_cc.h \
  /usr/include/bits/termios-c_iflag.h /usr/include/bits/termios-c_oflag.h \

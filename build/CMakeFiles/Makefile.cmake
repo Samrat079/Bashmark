@@ -38,7 +38,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/Platform/Linux.cmake"
   "/usr/share/cmake/Modules/Platform/UnixPaths.cmake"
   "/usr/share/cmake/Templates/CPackConfig.cmake.in"
-  "/var/home/samrat/Documents/git/Bashmark/CMakeLists.txt"
+  "/var/home/samrat/Documents/git/bashmark/CMakeLists.txt"
   "CMakeFiles/3.30.8/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.8/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.8/CMakeSystem.cmake"

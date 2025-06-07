@@ -1,5 +1,5 @@
 CMakeFiles/bashmark.dir/src/main.cpp.o: \
- /var/home/samrat/Documents/git/Bashmark/src/main.cpp \
+ /var/home/samrat/Documents/git/bashmark/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
@@ -140,10 +140,10 @@ CMakeFiles/bashmark.dir/src/main.cpp.o: \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/c++/14/limits \
  /usr/include/c++/14/ctime /usr/include/c++/14/bits/parse_numbers.h \
- /var/home/samrat/Documents/git/Bashmark/include/single_core.hpp \
- /var/home/samrat/Documents/git/Bashmark/include/multicore.hpp \
- /var/home/samrat/Documents/git/Bashmark/include/gpu_benchmark.hpp \
- /var/home/samrat/Documents/git/Bashmark/include/cpu_benchmark.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/single_core.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/multicore.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/gpu_benchmark.hpp \
+ /var/home/samrat/Documents/git/bashmark/include/cpu_benchmark.hpp \
  /usr/include/c++/14/atomic /usr/include/c++/14/bits/atomic_base.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
- /var/home/samrat/Documents/git/Bashmark/include/ui.hpp
+ /var/home/samrat/Documents/git/bashmark/include/ui.hpp

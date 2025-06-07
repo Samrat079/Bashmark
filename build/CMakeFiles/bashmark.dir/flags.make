@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/var/home/samrat/Documents/git/Bashmark/include
+CXX_INCLUDES = -I/var/home/samrat/Documents/git/bashmark/include
 
 CXX_FLAGS = -std=gnu++17 -Wall -Wextra -O3
 

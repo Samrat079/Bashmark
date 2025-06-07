@@ -1,6 +1,0 @@
-
-What would you like to do?
-1. Single Core CPU Benchmark
-2. Multi Core CPU Benchmark
-3. GPU Benchmark
-4. Full system Benchmark

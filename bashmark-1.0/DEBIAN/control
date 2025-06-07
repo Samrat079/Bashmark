@@ -1,9 +1,0 @@
-Package: bashmark
-Version: 1.0
-Section: utils
-Priority: optional
-Architecture: amd64
-Depends: libc6 (>= 2.27), libstdc++6 (>= 8), ocl-icd-libopencl1
-Maintainer: Samrat079
-Description: Bashmark - Benchmark your terminal performance
- Bashmark is a terminal-based benchmarking suite for CPU and GPU tasks.

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o"
   "CMakeFiles/bashmark.dir/src/cpu_benchmark.cpp.o.d"
-  "CMakeFiles/bashmark.dir/src/full_benchmark.cpp.o"
-  "CMakeFiles/bashmark.dir/src/full_benchmark.cpp.o.d"
   "CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o"
   "CMakeFiles/bashmark.dir/src/gpu_benchmark.cpp.o.d"
   "CMakeFiles/bashmark.dir/src/main.cpp.o"

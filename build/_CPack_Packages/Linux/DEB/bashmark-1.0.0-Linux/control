@@ -1,9 +1,0 @@
-Architecture: amd64
-Description: bashmark built using CMake
-Maintainer: Your Name
-Package: bashmark
-Priority: optional
-Section: devel
-Version: 1.0.0
-Installed-Size: 765
-

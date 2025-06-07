@@ -42,6 +42,6 @@ void benchmark_worker(std::atomic<bool>& stop_flag) {
     auto total_elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
     double mults_per_sec = static_cast<double>(mult_count) / (total_elapsed / 1000.0);
 
-    std::cout << "Thread completed. Matrix multiplied: " << mult_count << ", ";
+    std::cout << "Thread completed. Matrices multiplied: " << mult_count << ", ";
     std::cout << "Performance score: " << static_cast<int>(mults_per_sec) << " multiplications/sec\n";
 }

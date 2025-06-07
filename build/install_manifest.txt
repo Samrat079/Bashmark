@@ -1,4 +1,0 @@
-/usr/bin/bashmark
-/usr/share/bashmark/assets/ascii_logo.txt
-/usr/share/bashmark/assets/menu.txt
-/usr/share/bashmark/kernels/gpu_benchmark.cl

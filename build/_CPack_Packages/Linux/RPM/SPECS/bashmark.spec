@@ -8,7 +8,7 @@ Summary:        CPU and GPU Benchmarking Tool
 Name:           bashmark
 Version:        1.0.0
 Release:        1
-License:        unknown
+License:        MIT
 Group:          unknown
 Vendor:         Your Name
 

@@ -4,6 +4,9 @@ project(bashmark VERSION 1.0.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Define license
+set(PROJECT_LICENSE "MIT")  # Change this to GPLv3, Apache-2.0, BSD-3-Clause, etc. if you use a different license
+
 # Find required packages
 find_package(OpenCL REQUIRED)
 find_package(Threads REQUIRED)
@@ -60,18 +63,29 @@ set(CPACK_PACKAGE_NAME "bashmark")
 set(CPACK_PACKAGE_VERSION "1.0.0")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "CPU and GPU Benchmarking Tool")
 set(CPACK_PACKAGE_VENDOR "Your Name")
-set(CPACK_GENERATOR "RPM")
+set(CPACK_PACKAGE_LICENSE "${PROJECT_LICENSE}")
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/license.txt")
+set(CPACK_RPM_PACKAGE_LICENSE "${PROJECT_LICENSE}")
+set(CPACK_GENERATOR "RPM;DEB")
+
+# Fedora
 set(CPACK_RPM_PACKAGE_MAINTAINER "Samrat")
 set(CPACK_RPM_PACKAGE_DEPENDS "libc6, libstdc++6, libgcc1, ocl-icd-libopencl1")
+
+# Debian
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Samrat")
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6, libstdc++6, libgcc1, ocl-icd-libopencl1")
 
 include(CPack)
 
 # Debug information
 message(STATUS "Project: ${PROJECT_NAME}")
 message(STATUS "Version: ${PROJECT_VERSION}")
+message(STATUS "License: ${PROJECT_LICENSE}")
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 message(STATUS "OpenCL found: ${OpenCL_FOUND}")
 if(OpenCL_FOUND)
     message(STATUS "OpenCL include dirs: ${OpenCL_INCLUDE_DIRS}")
     message(STATUS "OpenCL libraries: ${OpenCL_LIBRARIES}")
 endif()
+

@@ -1,0 +1,10 @@
+Architecture: amd64
+Depends: libc6, libstdc++6, libgcc1, ocl-icd-libopencl1
+Description: CPU and GPU Benchmarking Tool
+Maintainer: Samrat
+Package: bashmark
+Priority: optional
+Section: devel
+Version: 1.0.0
+Installed-Size: 65
+

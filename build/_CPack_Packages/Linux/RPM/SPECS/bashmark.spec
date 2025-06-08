@@ -3,14 +3,14 @@
 %undefine _debuginfo_subpackages
 
 # -*- rpm-spec -*-
-BuildRoot:      %_topdir/bashmark-1.0.0-Linux
+BuildRoot:      %_topdir/bashmark-1.0.0
 Summary:        CPU and GPU Benchmarking Tool
 Name:           bashmark
 Version:        1.0.0
 Release:        1
 License:        MIT
 Group:          unknown
-Vendor:         Your Name
+Vendor:         Samrat
 
 
 
@@ -34,7 +34,7 @@ Prefix: /usr
 
 %define _rpmdir %_topdir/RPMS
 %define _srcrpmdir %_topdir/SRPMS
-%define _rpmfilename bashmark-1.0.0-Linux.rpm
+%define _rpmfilename bashmark-1.0.0.rpm
 %define _unpackaged_files_terminate_build 0
 
 

@@ -1,16 +1,16 @@
 + umask 022
 + cd /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/BUILD
-+ mv /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/tmpBBroot
++ mv /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0 /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/tmpBBroot
 + RPM_EC=0
 ++ jobs -p
 + exit 0
 + umask 022
 + cd /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/BUILD
-+ '[' /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux '!=' / ']'
-+ rm -rf /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux
-++ dirname /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux
++ '[' /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0 '!=' / ']'
++ rm -rf /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0
+++ dirname /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0
 + mkdir -p /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM
-+ mkdir /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux
++ mkdir /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0
 + CFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer '
 + export CFLAGS
 + CXXFLAGS='-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer '
@@ -31,9 +31,9 @@
 + export CC
 + CXX=g++
 + export CXX
-+ '[' -e /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux ']'
-+ rm -rf /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux
-+ mv /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/tmpBBroot /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0-Linux
++ '[' -e /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0 ']'
++ rm -rf /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0
++ mv /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/tmpBBroot /var/home/samrat/Documents/git/bashmark/build/_CPack_Packages/Linux/RPM/bashmark-1.0.0
 + /usr/lib/rpm/check-buildroot
 + /usr/lib/rpm/redhat/brp-ldconfig
 + /usr/lib/rpm/brp-compress

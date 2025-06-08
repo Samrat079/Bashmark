@@ -58,11 +58,21 @@ install(DIRECTORY assets/
 # Optional: Create kernels directory for GPU OpenCL kernels
 file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/kernels)
 
+# Custom package file name
+set(CPACK_PACKAGE_FILE_NAME "bashmark-${PROJECT_VERSION}")
+
+# Custom RPM filename (without .rpm)
+set(CPACK_RPM_FILE_NAME "bashmark-${PROJECT_VERSION}.rpm")
+
+# Custom DEB filename (without .deb)
+set(CPACK_DEBIAN_FILE_NAME "bashmark-${PROJECT_VERSION}.deb")
+
+
 # CPack configuration for creating packages
 set(CPACK_PACKAGE_NAME "bashmark")
 set(CPACK_PACKAGE_VERSION "1.0.0")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "CPU and GPU Benchmarking Tool")
-set(CPACK_PACKAGE_VENDOR "Your Name")
+set(CPACK_PACKAGE_VENDOR "Samrat")
 set(CPACK_PACKAGE_LICENSE "${PROJECT_LICENSE}")
 set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/license.txt")
 set(CPACK_RPM_PACKAGE_LICENSE "${PROJECT_LICENSE}")

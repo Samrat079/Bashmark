@@ -83,7 +83,7 @@ GPU benchmarking works similarly to CPU benchmarking but runs matrix math direct
 
 # 🛠️ Build Instructions
 
-📦 ## Pre-built Packages
+#📦 Pre-built Packages
 
 You can download pre-built packages from the [Releases page](https://github.com/Samrat079/bashmark/releases).
 

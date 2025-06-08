@@ -101,7 +101,7 @@ Download `bashmark-1.0.0.deb` and install:
 
 ```bash
 sudo apt install bashmark-1.0.0.deb
-
+```
 
 ---
 

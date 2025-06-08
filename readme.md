@@ -83,8 +83,25 @@ GPU benchmarking works similarly to CPU benchmarking but runs matrix math direct
 
 # 🛠️ Build Instructions
 
-📦 **Under development**
-(Build instructions will be added soon.)
+📦 ## Pre-built Packages
+
+You can download pre-built packages from the [Releases page](https://github.com/Samrat079/bashmark/releases).
+
+### For Fedora / RHEL / CentOS:
+
+Download `bashmark-1.0.0.rpm` and install:
+
+```bash
+sudo dnf install bashmark-1.0.0.rpm
+```
+
+### For Debian:
+
+Download `bashmark-1.0.0.deb` and install:
+
+```bash
+sudo apt install bashmark-1.0.0.deb
+
 
 ---
 

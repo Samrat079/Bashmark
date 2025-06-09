@@ -58,7 +58,7 @@ void run_gpu_benchmark() {
         check_error(error, "getting platform count");
         
         if (num_platforms == 0) {
-            std::cout << "No OpenCL platforms found. GPU benchmark cannot run.\n";
+            std::cout << "No OpenCL platforms found. GPU benchmark cannot run. Please install opencl runtime on your system\n";
             return;
         }
         

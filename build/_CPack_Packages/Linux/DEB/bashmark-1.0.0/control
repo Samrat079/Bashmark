@@ -1,6 +1,7 @@
 Architecture: amd64
-Depends: libc6, libstdc++6, libgcc1, ocl-icd-libopencl1
+Depends: libc6, libstdc++6, libgcc1, ocl-icd-libopencl1, intel-opencl, nvidia-opencl-icd, rocm-opencl-runtime, pocl-opencl-icd
 Description: CPU and GPU Benchmarking Tool
+ A fast terminal-based CPU and GPU benchmarking tool using OpenCL.
 Maintainer: Samrat
 Package: bashmark
 Priority: optional

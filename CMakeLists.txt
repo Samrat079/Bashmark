@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Define license
-set(PROJECT_LICENSE "MIT")  # Change this to GPLv3, Apache-2.0, BSD-3-Clause, etc. if you use a different license
+set(PROJECT_LICENSE "MIT")  # Change if you use a different license
 
 # Find required packages
 find_package(OpenCL REQUIRED)
@@ -33,17 +33,14 @@ target_link_libraries(bashmark
     Threads::Threads
 )
 
-# Include directories for target
-target_include_directories(bashmark PRIVATE 
-    ${CMAKE_SOURCE_DIR}/include
-    ${OpenCL_INCLUDE_DIRS}
-)
-
 # Compiler flags
 target_compile_options(bashmark PRIVATE -Wall -Wextra -O3)
 
 # Copy assets to build directory
 file(COPY ${CMAKE_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
+
+# Optional: Create kernels directory for GPU OpenCL kernels
+file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/kernels)
 
 # Install configuration
 install(TARGETS bashmark
@@ -55,37 +52,34 @@ install(DIRECTORY assets/
     FILES_MATCHING PATTERN "*"
 )
 
-# Optional: Create kernels directory for GPU OpenCL kernels
-file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/kernels)
-
-# Custom package file name
-set(CPACK_PACKAGE_FILE_NAME "bashmark-${PROJECT_VERSION}")
-
-# Custom RPM filename (without .rpm)
-set(CPACK_RPM_FILE_NAME "bashmark-${PROJECT_VERSION}.rpm")
-
-# Custom DEB filename (without .deb)
-set(CPACK_DEBIAN_FILE_NAME "bashmark-${PROJECT_VERSION}.deb")
-
-
 # CPack configuration for creating packages
+set(CPACK_GENERATOR "RPM;DEB")
+
+# Package basic metadata
 set(CPACK_PACKAGE_NAME "bashmark")
-set(CPACK_PACKAGE_VERSION "1.0.0")
+set(CPACK_PACKAGE_VERSION "${PROJECT_VERSION}")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "CPU and GPU Benchmarking Tool")
+set(CPACK_PACKAGE_DESCRIPTION "A fast terminal-based CPU and GPU benchmarking tool using OpenCL.")
 set(CPACK_PACKAGE_VENDOR "Samrat")
 set(CPACK_PACKAGE_LICENSE "${PROJECT_LICENSE}")
 set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/license.txt")
-set(CPACK_RPM_PACKAGE_LICENSE "${PROJECT_LICENSE}")
-set(CPACK_GENERATOR "RPM;DEB")
 
-# Fedora
-set(CPACK_RPM_PACKAGE_MAINTAINER "Samrat")
-set(CPACK_RPM_PACKAGE_DEPENDS "libc6, libstdc++6, libgcc1, ocl-icd-libopencl1")
-
-# Debian
+# Contact / Maintainer info
+set(CPACK_PACKAGE_CONTACT "samratdutta079@gmail.com")
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Samrat")
-set(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6, libstdc++6, libgcc1, ocl-icd-libopencl1")
 
+# Package file names
+set(CPACK_PACKAGE_FILE_NAME "bashmark-${PROJECT_VERSION}")
+set(CPACK_RPM_FILE_NAME "bashmark-${PROJECT_VERSION}.rpm")
+set(CPACK_DEBIAN_FILE_NAME "bashmark-${PROJECT_VERSION}.deb")
+
+# Dependencies
+
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6, libstdc++6, libgcc1, ocl-icd-libopencl1, intel-opencl, nvidia-opencl-icd, rocm-opencl-runtime, pocl-opencl-icd")
+set(CPACK_RPM_PACKAGE_DEPENDS "libc6, libstdc++6, libgcc1, ocl-icd, intel-opencl, nvidia-opencl-icd, rocm-opencl-runtime, pocl")
+
+
+# Include CPack last
 include(CPack)
 
 # Debug information

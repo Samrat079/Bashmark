@@ -53,7 +53,7 @@ install(DIRECTORY assets/
 )
 
 # CPack configuration for creating packages
-set(CPACK_GENERATOR "RPM;DEB")
+set(CPACK_GENERATOR "TGZ;RPM;DEB")
 
 # Package basic metadata
 set(CPACK_PACKAGE_NAME "bashmark")

@@ -1,4 +1,3 @@
-// gpu_benchmark.cpp
 #include <iostream>
 #include <vector>
 #include <chrono>
@@ -12,89 +11,105 @@
 #include <OpenCL/opencl.h>
 #else
 #include <CL/cl.h>
+#include <cstdlib>  // for getenv, setenv
 #endif
 
-// OpenCL kernel for matrix multiplication
-const char* matrix_mult_kernel = R"(
-__kernel void matrix_multiply(__global const float* A,
-                             __global const float* B,
-                             __global float* C,
-                             const int N) {
-    int row = get_global_id(0);
-    int col = get_global_id(1);
-    
-    if (row < N && col < N) {
-        float sum = 0.0f;
-        for (int k = 0; k < N; ++k) {
-            sum += A[row * N + k] * B[k * N + col];
-        }
-        C[row * N + col] = sum;
-    }
-}
-)";
-
-// Error checking function
-void check_error(cl_int error, const std::string& operation) {
-    if (error != CL_SUCCESS) {
-        std::cerr << "OpenCL error in " << operation << ": " << error << std::endl;
-        throw std::runtime_error("OpenCL error");
-    }
-}
-
-std::string get_device_info(cl_device_id device, cl_device_info param) {
-    size_t size;
-    clGetDeviceInfo(device, param, 0, nullptr, &size);
-    std::string result(size, '\0');
-    clGetDeviceInfo(device, param, size, &result[0], nullptr);
-    result.pop_back(); // Remove null terminator
-    return result;
-}
-
-void run_gpu_benchmark() {
-    try {
-        // Get platform
-        cl_uint num_platforms;
-        cl_int error = clGetPlatformIDs(0, nullptr, &num_platforms);
-        check_error(error, "getting platform count");
+    // OpenCL kernel for matrix multiplication
+    const char* matrix_mult_kernel = R"(
+    __kernel void matrix_multiply(__global const float* A,
+                                 __global const float* B,
+                                 __global float* C,
+                                 const int N) {
+        int row = get_global_id(0);
+        int col = get_global_id(1);
         
-        if (num_platforms == 0) {
-            std::cout << "No OpenCL platforms found. GPU benchmark cannot run. Please install opencl runtime on your system\n";
-            return;
-        }
-        
-        std::vector<cl_platform_id> platforms(num_platforms);
-        error = clGetPlatformIDs(num_platforms, platforms.data(), nullptr);
-        check_error(error, "getting platforms");
-        
-        // Find GPU device
-        cl_device_id device = nullptr;
-        std::string device_name, platform_name;
-        
-        for (auto platform : platforms) {
-            size_t size;
-            clGetPlatformInfo(platform, CL_PLATFORM_NAME, 0, nullptr, &size);
-            std::string plat_name(size, '\0');
-            clGetPlatformInfo(platform, CL_PLATFORM_NAME, size, &plat_name[0], nullptr);
-            plat_name.pop_back();
-            
-            cl_uint num_devices;
-            error = clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 0, nullptr, &num_devices);
-            
-            if (error == CL_SUCCESS && num_devices > 0) {
-                std::vector<cl_device_id> devices(num_devices);
-                clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, num_devices, devices.data(), nullptr);
-                
-                device = devices[0]; // Use first GPU found
-                device_name = get_device_info(device, CL_DEVICE_NAME);
-                platform_name = plat_name;
-                break;
+        if (row < N && col < N) {
+            float sum = 0.0f;
+            for (int k = 0; k < N; ++k) {
+                sum += A[row * N + k] * B[k * N + col];
             }
+            C[row * N + col] = sum;
         }
-        
-        if (device == nullptr) {
-            std::cout << "No GPU devices found. GPU benchmark cannot run.\n";
-            return;
+    }
+    )";
+    
+    // Error checking function
+    void check_error(cl_int error, const std::string& operation) {
+        if (error != CL_SUCCESS) {
+            std::cerr << "OpenCL error in " << operation << ": " << error << std::endl;
+            throw std::runtime_error("OpenCL error");
         }
+    }
+    
+    std::string get_device_info(cl_device_id device, cl_device_info param) {
+        size_t size;
+        clGetDeviceInfo(device, param, 0, nullptr, &size);
+        std::string result(size, '\0');
+        clGetDeviceInfo(device, param, size, &result[0], nullptr);
+        result.pop_back(); // Remove null terminator
+        return result;
+    }
+    
+    #ifndef __APPLE__
+    void ensureOpenCLVendorPath() {
+        const char* vendorEnv = std::getenv("OPENCL_VENDOR_PATH");
+        if (!vendorEnv || std::string(vendorEnv).empty()) {
+            setenv("OPENCL_VENDOR_PATH", "/etc/OpenCL/vendors", 1);
+        }
+    }
+    #else
+    void ensureOpenCLVendorPath() {
+        // macOS: do nothing; system handles OpenCL vendor paths differently
+    }
+    #endif
+    
+    void run_gpu_benchmark() {
+        ensureOpenCLVendorPath();  // <-- Call this first
+    
+        try {
+            // Get platform
+            cl_uint num_platforms;
+            cl_int error = clGetPlatformIDs(0, nullptr, &num_platforms);
+            check_error(error, "getting platform count");
+            
+            if (num_platforms == 0) {
+                std::cout << "No OpenCL platforms found. GPU benchmark cannot run. Please install opencl runtime on your system\n";
+                return;
+            }
+            
+            std::vector<cl_platform_id> platforms(num_platforms);
+            error = clGetPlatformIDs(num_platforms, platforms.data(), nullptr);
+            check_error(error, "getting platforms");
+            
+            // Find GPU device
+            cl_device_id device = nullptr;
+            std::string device_name, platform_name;
+            
+            for (auto platform : platforms) {
+                size_t size;
+                clGetPlatformInfo(platform, CL_PLATFORM_NAME, 0, nullptr, &size);
+                std::string plat_name(size, '\0');
+                clGetPlatformInfo(platform, CL_PLATFORM_NAME, size, &plat_name[0], nullptr);
+                plat_name.pop_back();
+                
+                cl_uint num_devices;
+                error = clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, 0, nullptr, &num_devices);
+                
+                if (error == CL_SUCCESS && num_devices > 0) {
+                    std::vector<cl_device_id> devices(num_devices);
+                    clGetDeviceIDs(platform, CL_DEVICE_TYPE_GPU, num_devices, devices.data(), nullptr);
+                    
+                    device = devices[0]; // Use first GPU found
+                    device_name = get_device_info(device, CL_DEVICE_NAME);
+                    platform_name = plat_name;
+                    break;
+                }
+            }
+            
+            if (device == nullptr) {
+                std::cout << "No GPU devices found. GPU benchmark cannot run.\n";
+                return;
+            }
 
         std::cout << "\nStarting GPU threads...press 'q' to terminate." << std::endl;
         std::cout << "GPU detected: " << device_name << std::endl;

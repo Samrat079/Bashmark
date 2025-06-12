@@ -83,6 +83,15 @@ GPU benchmarking works similarly to CPU benchmarking but runs matrix math direct
 
 # 🛠️ Build Instructions
 
+### 🍺 Homebrew (macOS / Linux)
+
+Tap the repository and install:
+
+```bash
+brew tap Samrat079/bashmark
+brew install bashmark
+```
+
 ### 📦 Pre-built Packages
 
 You can download pre-built packages from the [Releases page](https://github.com/Samrat079/bashmark/releases).

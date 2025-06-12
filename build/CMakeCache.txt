@@ -54,7 +54,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -357,8 +357,6 @@ CMAKE_HOME_DIRECTORY:INTERNAL=/var/home/samrat/Documents/git/bashmark
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=0
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
-//Name of CMakeLists files to read
-CMAKE_LIST_FILE_NAME:INTERNAL=CMakeLists.txt
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
 CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS

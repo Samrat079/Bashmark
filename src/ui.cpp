@@ -62,11 +62,12 @@ std::string getAssetsPath() {
         }
     }
 
-    // 3. System-wide data directories
     const std::vector<fs::path> systemPaths = {
-        "/usr/local/share/bashmark/assets",
-        "/usr/share/bashmark/assets"
+        "/home/linuxbrew/.linuxbrew/share/bashmark/assets", // Linuxbrew
+        "/usr/local/share/bashmark/assets",                 // System install
+        "/usr/share/bashmark/assets"                        // Fallback
     };
+    
     for (const auto& path : systemPaths) {
         if (fs::exists(path)) {
             return path.string();
